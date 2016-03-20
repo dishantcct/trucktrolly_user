@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/app_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/truck_trolly"
+        android:textColor="@color/colorWhite"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/username"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/password"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_me"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+</LinearLayout>
